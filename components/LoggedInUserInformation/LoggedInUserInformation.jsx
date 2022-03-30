@@ -20,7 +20,8 @@ export function LoggedInUserInformation() {
                 <div className={s.line}></div>
                 <div className={s.logged_in_user_information}>
                     <a href='#' className={s.login_link} onClick={handleLogOut}>Smelltu hér til að skrá út</a>
-                    <p>Þú ert skráður inn sem {loggedInUser?.user?.name}</p>
+                    <p>Þú ert skráður inn sem <strong>{loggedInUser?.user?.name}</strong></p>
+                    <Link className={s.login_link} href='/'>Forsíða</Link>
                 </div>
             </>
         );
@@ -30,7 +31,9 @@ export function LoggedInUserInformation() {
         <>
             <div className={s.line}></div>
             <div className={s.logged_in_user_information}>
-                <Link href='/login' className={s.login_link}>Smelltu hér til að skrá þig inn</Link>
+                <Link href='/'><a className={s.login_link}>Forsíða</a></Link>
+                <Link href='/login'><a className={s.login_link}>Innskrá</a></Link>
+                <Link href='/signup'><a className={s.login_link}>nýskrá</a></Link>
             </div>
         </>
     );

@@ -53,26 +53,22 @@ export function LoginForm() {
 
     if (errorMessage) {
         return(
-            <LoginProvider>
-                <form ref={loginFormContainer} onSubmit={handleSubmit}>
-                    <div className={s.error_message}>
-                        <p>{errorMessage}</p>
-                    </div>
-                    <UsernameInput />
-                    <PasswordComponent />
-                    <LoginButton />
-                </form>
-            </ LoginProvider>
-        );
-    }
-
-    return (
-        <LoginProvider>
-            <form ref={ loginFormContainer } onSubmit={handleSubmit}>
+            <form ref={loginFormContainer} onSubmit={handleSubmit}>
+                <div className={s.error_message}>
+                    <p>{errorMessage}</p>
+                </div>
                 <UsernameInput />
                 <PasswordComponent />
                 <LoginButton />
             </form>
-        </LoginProvider>
+        );
+    }
+
+    return (
+        <form ref={ loginFormContainer } onSubmit={handleSubmit}>
+            <UsernameInput />
+            <PasswordComponent />
+            <LoginButton />
+        </form>
     );
 }
