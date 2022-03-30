@@ -29,7 +29,10 @@ export function EventInformation({ eventId }) {
             }
             setData(tempData);
         }
-        fetchData();
+
+        if (eventId) {
+            fetchData();
+        }
     }, [eventId]);
 
     if (error) {

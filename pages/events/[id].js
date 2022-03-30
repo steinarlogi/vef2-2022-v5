@@ -20,8 +20,6 @@ export default function() {
 
     }, [router.isReady]);
 
-    console.log(id);
-
     return (
         <LoginProvider>
             <div className={s.main_content}>

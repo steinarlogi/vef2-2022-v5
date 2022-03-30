@@ -12,8 +12,6 @@ export function LoggedInUserInformation() {
         logOutUser();
     }
 
-    console.log(loggedInUser);
-
     if (loggedInUser) {
         return (
             <>
@@ -21,7 +19,7 @@ export function LoggedInUserInformation() {
                 <div className={s.logged_in_user_information}>
                     <a href='#' className={s.login_link} onClick={handleLogOut}>Smelltu hér til að skrá út</a>
                     <p>Þú ert skráður inn sem <strong>{loggedInUser?.user?.name}</strong></p>
-                    <Link className={s.login_link} href='/'>Forsíða</Link>
+                    <Link href='/'><a className={s.login_link}>Forsíða</a></Link>
                 </div>
             </>
         );
