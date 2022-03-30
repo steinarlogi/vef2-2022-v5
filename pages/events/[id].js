@@ -7,7 +7,7 @@ import { LoginProvider } from "../../contexts/LoginProvider.jsx";
 
 import s from '../../styles/Home.module.scss';
 
-export default function() {
+export default function Event() {
     const router = useRouter();
     const [id, setId] = useState();
 

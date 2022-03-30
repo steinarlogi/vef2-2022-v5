@@ -4,7 +4,7 @@ import { LoggedInUserInformation } from '../components/LoggedInUserInformation/L
 
 import styles from '../styles/Home.module.scss';
 
-export default function() {
+export default function login() {
     return (
         <LoginProvider>
             <div className={styles.main_content}>

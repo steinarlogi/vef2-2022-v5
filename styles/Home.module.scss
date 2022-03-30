@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.error_message {
+  display: flex;
+  justify-content: center;
+}
+
 .main_content {
   max-width: 1250px;
   margin: auto;
