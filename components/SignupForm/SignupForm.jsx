@@ -47,8 +47,8 @@ export function SignupForm() {
                 <div className={s.error_message}>
                     <>
                     {
-                        error.map((d) => 
-                            <p>{d.msg}</p>
+                        error.map((d, i) => 
+                            <p key={i}>{d.msg}</p>
                         )
                     }
                     </>
