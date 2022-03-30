@@ -12,6 +12,11 @@
   align-items: center;
 }
 
+.main_content {
+  max-width: 1250px;
+  margin: auto;
+}
+
 .footer {
   display: flex;
   flex: 1;
@@ -106,6 +111,12 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.test {
+  .blabla {
+    color: green;
+  }
 }
 
 @media (max-width: 600px) {

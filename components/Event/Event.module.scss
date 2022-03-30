@@ -1,0 +1,28 @@
+.event {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 16px;
+
+    h3 {
+        color: rgb(103, 103, 52);
+        font-weight: bold;
+    }
+
+    h3::before {
+        content: '• ';
+        color: black;
+    }
+
+    a {
+        color:rgb(103, 103, 52);
+    }
+
+    a:visited {
+        color: rgb(103, 103, 52);
+    }
+
+    * {
+        margin: 0;
+    }
+}
