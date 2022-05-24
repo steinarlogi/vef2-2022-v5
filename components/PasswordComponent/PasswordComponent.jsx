@@ -6,7 +6,6 @@ export function PasswordComponent() {
     const [value, setValue] = useState('');
 
     function handleChange(e) {
-        console.log('password input changed');
         setValue(e.target.value);
     }
 
